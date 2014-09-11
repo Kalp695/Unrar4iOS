@@ -1,0 +1,787 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		16021E3419C1624F00AEB421 /* dll.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16B38F2019C1482B004AF10C /* dll.cpp */; };
+		16B38EE819C1464A004AF10C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16B38EE719C1464A004AF10C /* Foundation.framework */; };
+		16B38EED19C1464A004AF10C /* Unrar4iOS.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16B38EEC19C1464A004AF10C /* Unrar4iOS.h */; };
+		16B38EEF19C1464A004AF10C /* Unrar4iOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = 16B38EEE19C1464A004AF10C /* Unrar4iOS.mm */; };
+		16B38EF619C1464A004AF10C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16B38EF519C1464A004AF10C /* XCTest.framework */; };
+		16B38EF719C1464A004AF10C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16B38EE719C1464A004AF10C /* Foundation.framework */; };
+		16B38EF919C1464A004AF10C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16B38EF819C1464A004AF10C /* UIKit.framework */; };
+		16B38EFC19C1464A004AF10C /* libUnrar4iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16B38EE419C1464A004AF10C /* libUnrar4iOS.a */; };
+		16B38F0219C1464A004AF10C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 16B38F0019C1464A004AF10C /* InfoPlist.strings */; };
+		16B38F0419C1464A004AF10C /* Unrar4iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B38F0319C1464A004AF10C /* Unrar4iOSTests.m */; };
+		16B38F8F19C1482B004AF10C /* archive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16B38F1019C1482B004AF10C /* archive.cpp */; };
+		16B38F9019C1482B004AF10C /* arcread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16B38F1219C1482B004AF10C /* arcread.cpp */; };
+		16B38F9219C1482B004AF10C /* cmddata.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16B38F1519C1482B004AF10C /* cmddata.cpp */; };
+		16B38F9419C1482B004AF10C /* consio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16B38F1A19C1482B004AF10C /* consio.cpp */; };
+		16B38F9519C1482B004AF10C /* crc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16B38F1C19C1482B004AF10C /* crc.cpp */; };
+		16B38F9619C1482B004AF10C /* crypt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16B38F1E19C1482B004AF10C /* crypt.cpp */; };
+		16B38F9819C1482B004AF10C /* encname.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16B38F2419C1482B004AF10C /* encname.cpp */; };
+		16B38F9919C1482B004AF10C /* errhnd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16B38F2619C1482B004AF10C /* errhnd.cpp */; };
+		16B38F9A19C1482B004AF10C /* extinfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16B38F2819C1482B004AF10C /* extinfo.cpp */; };
+		16B38F9B19C1482B004AF10C /* extract.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16B38F2A19C1482B004AF10C /* extract.cpp */; };
+		16B38F9C19C1482B004AF10C /* filcreat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16B38F2C19C1482B004AF10C /* filcreat.cpp */; };
+		16B38F9D19C1482B004AF10C /* file.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16B38F2E19C1482B004AF10C /* file.cpp */; };
+		16B38F9E19C1482B004AF10C /* filefn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16B38F3019C1482B004AF10C /* filefn.cpp */; };
+		16B38F9F19C1482B004AF10C /* filestr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16B38F3219C1482B004AF10C /* filestr.cpp */; };
+		16B38FA019C1482B004AF10C /* find.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16B38F3419C1482B004AF10C /* find.cpp */; };
+		16B38FA119C1482B004AF10C /* getbits.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16B38F3619C1482B004AF10C /* getbits.cpp */; };
+		16B38FA219C1482B004AF10C /* global.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16B38F3819C1482B004AF10C /* global.cpp */; };
+		16B38FA319C1482B004AF10C /* isnt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16B38F3B19C1482B004AF10C /* isnt.cpp */; };
+		16B38FA419C1482B004AF10C /* list.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16B38F3E19C1482B004AF10C /* list.cpp */; };
+		16B38FA619C1482B004AF10C /* match.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16B38F4719C1482B004AF10C /* match.cpp */; };
+		16B38FA819C1482B004AF10C /* options.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16B38F4C19C1482B004AF10C /* options.cpp */; };
+		16B38FAA19C1482B004AF10C /* pathfn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16B38F5019C1482B004AF10C /* pathfn.cpp */; };
+		16B38FAB19C1482B004AF10C /* rar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16B38F5219C1482B004AF10C /* rar.cpp */; };
+		16B38FAD19C1482B004AF10C /* rarvm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16B38F5919C1482B004AF10C /* rarvm.cpp */; };
+		16B38FAF19C1482B004AF10C /* rawread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16B38F5C19C1482B004AF10C /* rawread.cpp */; };
+		16B38FB019C1482B004AF10C /* rdwrfn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16B38F5E19C1482B004AF10C /* rdwrfn.cpp */; };
+		16B38FB119C1482B004AF10C /* recvol.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16B38F6119C1482B004AF10C /* recvol.cpp */; };
+		16B38FB219C1482B004AF10C /* resource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16B38F6319C1482B004AF10C /* resource.cpp */; };
+		16B38FB319C1482B004AF10C /* rijndael.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16B38F6519C1482B004AF10C /* rijndael.cpp */; };
+		16B38FB419C1482B004AF10C /* rs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16B38F6719C1482B004AF10C /* rs.cpp */; };
+		16B38FB519C1482B004AF10C /* savepos.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16B38F6919C1482B004AF10C /* savepos.cpp */; };
+		16B38FB619C1482B004AF10C /* scantree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16B38F6B19C1482B004AF10C /* scantree.cpp */; };
+		16B38FB819C1482B004AF10C /* sha1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16B38F6F19C1482B004AF10C /* sha1.cpp */; };
+		16B38FB919C1482B004AF10C /* smallfn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16B38F7119C1482B004AF10C /* smallfn.cpp */; };
+		16B38FBA19C1482B004AF10C /* strfn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16B38F7319C1482B004AF10C /* strfn.cpp */; };
+		16B38FBB19C1482B004AF10C /* strlist.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16B38F7519C1482B004AF10C /* strlist.cpp */; };
+		16B38FBD19C1482B004AF10C /* system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16B38F7919C1482B004AF10C /* system.cpp */; };
+		16B38FBE19C1482B004AF10C /* timefn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16B38F7B19C1482B004AF10C /* timefn.cpp */; };
+		16B38FBF19C1482B004AF10C /* ulinks.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16B38F7D19C1482B004AF10C /* ulinks.cpp */; };
+		16B38FC019C1482B004AF10C /* unicode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16B38F7F19C1482B004AF10C /* unicode.cpp */; };
+		16B38FC219C1482B004AF10C /* unpack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16B38F8219C1482B004AF10C /* unpack.cpp */; };
+		16B38FC919C14DD1004AF10C /* volume.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16B38F8A19C1482B004AF10C /* volume.cpp */; };
+		16B38FCA19C14E8E004AF10C /* secpassword.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16B38F6D19C1482B004AF10C /* secpassword.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		16B38EFA19C1464A004AF10C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16B38EDC19C1464A004AF10C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 16B38EE319C1464A004AF10C;
+			remoteInfo = Unrar4iOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		16B38EE219C1464A004AF10C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				16B38EED19C1464A004AF10C /* Unrar4iOS.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		16B38EE419C1464A004AF10C /* libUnrar4iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUnrar4iOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		16B38EE719C1464A004AF10C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		16B38EEB19C1464A004AF10C /* Unrar4iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Unrar4iOS-Prefix.pch"; sourceTree = "<group>"; };
+		16B38EEC19C1464A004AF10C /* Unrar4iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Unrar4iOS.h; sourceTree = "<group>"; };
+		16B38EEE19C1464A004AF10C /* Unrar4iOS.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Unrar4iOS.mm; sourceTree = "<group>"; };
+		16B38EF419C1464A004AF10C /* Unrar4iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Unrar4iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		16B38EF519C1464A004AF10C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		16B38EF819C1464A004AF10C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		16B38EFF19C1464A004AF10C /* Unrar4iOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Unrar4iOSTests-Info.plist"; sourceTree = "<group>"; };
+		16B38F0119C1464A004AF10C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		16B38F0319C1464A004AF10C /* Unrar4iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Unrar4iOSTests.m; sourceTree = "<group>"; };
+		16B38F0E19C1482B004AF10C /* acknow.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = acknow.txt; sourceTree = "<group>"; };
+		16B38F0F19C1482B004AF10C /* arccmt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = arccmt.cpp; sourceTree = "<group>"; };
+		16B38F1019C1482B004AF10C /* archive.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = archive.cpp; sourceTree = "<group>"; };
+		16B38F1119C1482B004AF10C /* archive.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = archive.hpp; sourceTree = "<group>"; };
+		16B38F1219C1482B004AF10C /* arcread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = arcread.cpp; sourceTree = "<group>"; };
+		16B38F1319C1482B004AF10C /* array.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = array.hpp; sourceTree = "<group>"; };
+		16B38F1419C1482B004AF10C /* beosea.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = beosea.cpp; sourceTree = "<group>"; };
+		16B38F1519C1482B004AF10C /* cmddata.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cmddata.cpp; sourceTree = "<group>"; };
+		16B38F1619C1482B004AF10C /* cmddata.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = cmddata.hpp; sourceTree = "<group>"; };
+		16B38F1719C1482B004AF10C /* coder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = coder.cpp; sourceTree = "<group>"; };
+		16B38F1819C1482B004AF10C /* coder.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = coder.hpp; sourceTree = "<group>"; };
+		16B38F1919C1482B004AF10C /* compress.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = compress.hpp; sourceTree = "<group>"; };
+		16B38F1A19C1482B004AF10C /* consio.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = consio.cpp; sourceTree = "<group>"; };
+		16B38F1B19C1482B004AF10C /* consio.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = consio.hpp; sourceTree = "<group>"; };
+		16B38F1C19C1482B004AF10C /* crc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = crc.cpp; sourceTree = "<group>"; };
+		16B38F1D19C1482B004AF10C /* crc.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = crc.hpp; sourceTree = "<group>"; };
+		16B38F1E19C1482B004AF10C /* crypt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = crypt.cpp; sourceTree = "<group>"; };
+		16B38F1F19C1482B004AF10C /* crypt.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = crypt.hpp; sourceTree = "<group>"; };
+		16B38F2019C1482B004AF10C /* dll.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dll.cpp; sourceTree = "<group>"; };
+		16B38F2119C1482B004AF10C /* dll.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dll.def; sourceTree = "<group>"; };
+		16B38F2219C1482B004AF10C /* dll.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = dll.hpp; sourceTree = "<group>"; };
+		16B38F2319C1482B004AF10C /* dll.rc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dll.rc; sourceTree = "<group>"; };
+		16B38F2419C1482B004AF10C /* encname.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = encname.cpp; sourceTree = "<group>"; };
+		16B38F2519C1482B004AF10C /* encname.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = encname.hpp; sourceTree = "<group>"; };
+		16B38F2619C1482B004AF10C /* errhnd.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = errhnd.cpp; sourceTree = "<group>"; };
+		16B38F2719C1482B004AF10C /* errhnd.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = errhnd.hpp; sourceTree = "<group>"; };
+		16B38F2819C1482B004AF10C /* extinfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = extinfo.cpp; sourceTree = "<group>"; };
+		16B38F2919C1482B004AF10C /* extinfo.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = extinfo.hpp; sourceTree = "<group>"; };
+		16B38F2A19C1482B004AF10C /* extract.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = extract.cpp; sourceTree = "<group>"; };
+		16B38F2B19C1482B004AF10C /* extract.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = extract.hpp; sourceTree = "<group>"; };
+		16B38F2C19C1482B004AF10C /* filcreat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = filcreat.cpp; sourceTree = "<group>"; };
+		16B38F2D19C1482B004AF10C /* filcreat.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = filcreat.hpp; sourceTree = "<group>"; };
+		16B38F2E19C1482B004AF10C /* file.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = file.cpp; sourceTree = "<group>"; };
+		16B38F2F19C1482B004AF10C /* file.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = file.hpp; sourceTree = "<group>"; };
+		16B38F3019C1482B004AF10C /* filefn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = filefn.cpp; sourceTree = "<group>"; };
+		16B38F3119C1482B004AF10C /* filefn.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = filefn.hpp; sourceTree = "<group>"; };
+		16B38F3219C1482B004AF10C /* filestr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = filestr.cpp; sourceTree = "<group>"; };
+		16B38F3319C1482B004AF10C /* filestr.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = filestr.hpp; sourceTree = "<group>"; };
+		16B38F3419C1482B004AF10C /* find.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = find.cpp; sourceTree = "<group>"; };
+		16B38F3519C1482B004AF10C /* find.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = find.hpp; sourceTree = "<group>"; };
+		16B38F3619C1482B004AF10C /* getbits.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = getbits.cpp; sourceTree = "<group>"; };
+		16B38F3719C1482B004AF10C /* getbits.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = getbits.hpp; sourceTree = "<group>"; };
+		16B38F3819C1482B004AF10C /* global.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = global.cpp; sourceTree = "<group>"; };
+		16B38F3919C1482B004AF10C /* global.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = global.hpp; sourceTree = "<group>"; };
+		16B38F3A19C1482B004AF10C /* headers.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = headers.hpp; sourceTree = "<group>"; };
+		16B38F3B19C1482B004AF10C /* isnt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = isnt.cpp; sourceTree = "<group>"; };
+		16B38F3C19C1482B004AF10C /* isnt.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = isnt.hpp; sourceTree = "<group>"; };
+		16B38F3D19C1482B004AF10C /* license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license.txt; sourceTree = "<group>"; };
+		16B38F3E19C1482B004AF10C /* list.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = list.cpp; sourceTree = "<group>"; };
+		16B38F3F19C1482B004AF10C /* list.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = list.hpp; sourceTree = "<group>"; };
+		16B38F4019C1482B004AF10C /* loclang.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = loclang.hpp; sourceTree = "<group>"; };
+		16B38F4119C1482B004AF10C /* log.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = log.cpp; sourceTree = "<group>"; };
+		16B38F4219C1482B004AF10C /* log.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = log.hpp; sourceTree = "<group>"; };
+		16B38F4319C1482B004AF10C /* makefile.bcc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = makefile.bcc; sourceTree = "<group>"; };
+		16B38F4419C1482B004AF10C /* makefile.dj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = makefile.dj; sourceTree = "<group>"; };
+		16B38F4519C1482B004AF10C /* makefile.dmc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = makefile.dmc; sourceTree = "<group>"; };
+		16B38F4619C1482B004AF10C /* makefile.unix */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = makefile.unix; sourceTree = "<group>"; };
+		16B38F4719C1482B004AF10C /* match.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = match.cpp; sourceTree = "<group>"; };
+		16B38F4819C1482B004AF10C /* match.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = match.hpp; sourceTree = "<group>"; };
+		16B38F4919C1482B004AF10C /* model.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = model.cpp; sourceTree = "<group>"; };
+		16B38F4A19C1482B004AF10C /* model.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = model.hpp; sourceTree = "<group>"; };
+		16B38F4B19C1482B004AF10C /* msc.dep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = msc.dep; sourceTree = "<group>"; };
+		16B38F4C19C1482B004AF10C /* options.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = options.cpp; sourceTree = "<group>"; };
+		16B38F4D19C1482B004AF10C /* options.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = options.hpp; sourceTree = "<group>"; };
+		16B38F4E19C1482B004AF10C /* os.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = os.hpp; sourceTree = "<group>"; };
+		16B38F4F19C1482B004AF10C /* os2ea.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = os2ea.cpp; sourceTree = "<group>"; };
+		16B38F5019C1482B004AF10C /* pathfn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = pathfn.cpp; sourceTree = "<group>"; };
+		16B38F5119C1482B004AF10C /* pathfn.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = pathfn.hpp; sourceTree = "<group>"; };
+		16B38F5219C1482B004AF10C /* rar.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rar.cpp; sourceTree = "<group>"; };
+		16B38F5319C1482B004AF10C /* rar.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rar.hpp; sourceTree = "<group>"; };
+		16B38F5419C1482B004AF10C /* rardefs.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rardefs.hpp; sourceTree = "<group>"; };
+		16B38F5519C1482B004AF10C /* rarlang.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rarlang.hpp; sourceTree = "<group>"; };
+		16B38F5619C1482B004AF10C /* raros.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = raros.hpp; sourceTree = "<group>"; };
+		16B38F5719C1482B004AF10C /* rarpch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rarpch.cpp; sourceTree = "<group>"; };
+		16B38F5819C1482B004AF10C /* rartypes.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rartypes.hpp; sourceTree = "<group>"; };
+		16B38F5919C1482B004AF10C /* rarvm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rarvm.cpp; sourceTree = "<group>"; };
+		16B38F5A19C1482B004AF10C /* rarvm.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rarvm.hpp; sourceTree = "<group>"; };
+		16B38F5B19C1482B004AF10C /* rarvmtbl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rarvmtbl.cpp; sourceTree = "<group>"; };
+		16B38F5C19C1482B004AF10C /* rawread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rawread.cpp; sourceTree = "<group>"; };
+		16B38F5D19C1482B004AF10C /* rawread.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rawread.hpp; sourceTree = "<group>"; };
+		16B38F5E19C1482B004AF10C /* rdwrfn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rdwrfn.cpp; sourceTree = "<group>"; };
+		16B38F5F19C1482B004AF10C /* rdwrfn.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rdwrfn.hpp; sourceTree = "<group>"; };
+		16B38F6019C1482B004AF10C /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		16B38F6119C1482B004AF10C /* recvol.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = recvol.cpp; sourceTree = "<group>"; };
+		16B38F6219C1482B004AF10C /* recvol.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = recvol.hpp; sourceTree = "<group>"; };
+		16B38F6319C1482B004AF10C /* resource.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = resource.cpp; sourceTree = "<group>"; };
+		16B38F6419C1482B004AF10C /* resource.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = resource.hpp; sourceTree = "<group>"; };
+		16B38F6519C1482B004AF10C /* rijndael.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rijndael.cpp; sourceTree = "<group>"; };
+		16B38F6619C1482B004AF10C /* rijndael.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rijndael.hpp; sourceTree = "<group>"; };
+		16B38F6719C1482B004AF10C /* rs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rs.cpp; sourceTree = "<group>"; };
+		16B38F6819C1482B004AF10C /* rs.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rs.hpp; sourceTree = "<group>"; };
+		16B38F6919C1482B004AF10C /* savepos.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = savepos.cpp; sourceTree = "<group>"; };
+		16B38F6A19C1482B004AF10C /* savepos.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = savepos.hpp; sourceTree = "<group>"; };
+		16B38F6B19C1482B004AF10C /* scantree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = scantree.cpp; sourceTree = "<group>"; };
+		16B38F6C19C1482B004AF10C /* scantree.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = scantree.hpp; sourceTree = "<group>"; };
+		16B38F6D19C1482B004AF10C /* secpassword.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = secpassword.cpp; sourceTree = "<group>"; };
+		16B38F6E19C1482B004AF10C /* secpassword.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = secpassword.hpp; sourceTree = "<group>"; };
+		16B38F6F19C1482B004AF10C /* sha1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sha1.cpp; sourceTree = "<group>"; };
+		16B38F7019C1482B004AF10C /* sha1.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = sha1.hpp; sourceTree = "<group>"; };
+		16B38F7119C1482B004AF10C /* smallfn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = smallfn.cpp; sourceTree = "<group>"; };
+		16B38F7219C1482B004AF10C /* smallfn.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = smallfn.hpp; sourceTree = "<group>"; };
+		16B38F7319C1482B004AF10C /* strfn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = strfn.cpp; sourceTree = "<group>"; };
+		16B38F7419C1482B004AF10C /* strfn.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = strfn.hpp; sourceTree = "<group>"; };
+		16B38F7519C1482B004AF10C /* strlist.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = strlist.cpp; sourceTree = "<group>"; };
+		16B38F7619C1482B004AF10C /* strlist.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = strlist.hpp; sourceTree = "<group>"; };
+		16B38F7719C1482B004AF10C /* suballoc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = suballoc.cpp; sourceTree = "<group>"; };
+		16B38F7819C1482B004AF10C /* suballoc.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = suballoc.hpp; sourceTree = "<group>"; };
+		16B38F7919C1482B004AF10C /* system.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = system.cpp; sourceTree = "<group>"; };
+		16B38F7A19C1482B004AF10C /* system.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = system.hpp; sourceTree = "<group>"; };
+		16B38F7B19C1482B004AF10C /* timefn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = timefn.cpp; sourceTree = "<group>"; };
+		16B38F7C19C1482B004AF10C /* timefn.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = timefn.hpp; sourceTree = "<group>"; };
+		16B38F7D19C1482B004AF10C /* ulinks.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ulinks.cpp; sourceTree = "<group>"; };
+		16B38F7E19C1482B004AF10C /* ulinks.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ulinks.hpp; sourceTree = "<group>"; };
+		16B38F7F19C1482B004AF10C /* unicode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = unicode.cpp; sourceTree = "<group>"; };
+		16B38F8019C1482B004AF10C /* unicode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = unicode.hpp; sourceTree = "<group>"; };
+		16B38F8119C1482B004AF10C /* unios2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = unios2.cpp; sourceTree = "<group>"; };
+		16B38F8219C1482B004AF10C /* unpack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = unpack.cpp; sourceTree = "<group>"; };
+		16B38F8319C1482B004AF10C /* unpack.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = unpack.hpp; sourceTree = "<group>"; };
+		16B38F8419C1482B004AF10C /* unpack15.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = unpack15.cpp; sourceTree = "<group>"; };
+		16B38F8519C1482B004AF10C /* unpack20.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = unpack20.cpp; sourceTree = "<group>"; };
+		16B38F8619C1482B004AF10C /* UnRAR.vcproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = UnRAR.vcproj; sourceTree = "<group>"; };
+		16B38F8719C1482B004AF10C /* UnRARDll.vcproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = UnRARDll.vcproj; sourceTree = "<group>"; };
+		16B38F8819C1482B004AF10C /* uowners.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = uowners.cpp; sourceTree = "<group>"; };
+		16B38F8919C1482B004AF10C /* version.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = version.hpp; sourceTree = "<group>"; };
+		16B38F8A19C1482B004AF10C /* volume.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = volume.cpp; sourceTree = "<group>"; };
+		16B38F8B19C1482B004AF10C /* volume.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = volume.hpp; sourceTree = "<group>"; };
+		16B38F8C19C1482B004AF10C /* win32acl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = win32acl.cpp; sourceTree = "<group>"; };
+		16B38F8D19C1482B004AF10C /* win32stm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = win32stm.cpp; sourceTree = "<group>"; };
+		16B3905519C15EF8004AF10C /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		16B38EE119C1464A004AF10C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16B38EE819C1464A004AF10C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16B38EF119C1464A004AF10C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16B38EF619C1464A004AF10C /* XCTest.framework in Frameworks */,
+				16B38EF919C1464A004AF10C /* UIKit.framework in Frameworks */,
+				16B38EF719C1464A004AF10C /* Foundation.framework in Frameworks */,
+				16B38EFC19C1464A004AF10C /* libUnrar4iOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16B38EDB19C1464A004AF10C = {
+			isa = PBXGroup;
+			children = (
+				16B38EE919C1464A004AF10C /* Unrar4iOS */,
+				16B38EFD19C1464A004AF10C /* Unrar4iOSTests */,
+				16B38EE619C1464A004AF10C /* Frameworks */,
+				16B38EE519C1464A004AF10C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		16B38EE519C1464A004AF10C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16B38EE419C1464A004AF10C /* libUnrar4iOS.a */,
+				16B38EF419C1464A004AF10C /* Unrar4iOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		16B38EE619C1464A004AF10C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				16B3905519C15EF8004AF10C /* libz.dylib */,
+				16B38EE719C1464A004AF10C /* Foundation.framework */,
+				16B38EF519C1464A004AF10C /* XCTest.framework */,
+				16B38EF819C1464A004AF10C /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		16B38EE919C1464A004AF10C /* Unrar4iOS */ = {
+			isa = PBXGroup;
+			children = (
+				16B38F0D19C1482B004AF10C /* unrar */,
+				16B38EEC19C1464A004AF10C /* Unrar4iOS.h */,
+				16B38EEE19C1464A004AF10C /* Unrar4iOS.mm */,
+				16B38EEA19C1464A004AF10C /* Supporting Files */,
+			);
+			path = Unrar4iOS;
+			sourceTree = "<group>";
+		};
+		16B38EEA19C1464A004AF10C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				16B38EEB19C1464A004AF10C /* Unrar4iOS-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		16B38EFD19C1464A004AF10C /* Unrar4iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				16B38F0319C1464A004AF10C /* Unrar4iOSTests.m */,
+				16B38EFE19C1464A004AF10C /* Supporting Files */,
+			);
+			path = Unrar4iOSTests;
+			sourceTree = "<group>";
+		};
+		16B38EFE19C1464A004AF10C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				16B38EFF19C1464A004AF10C /* Unrar4iOSTests-Info.plist */,
+				16B38F0019C1464A004AF10C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		16B38F0D19C1482B004AF10C /* unrar */ = {
+			isa = PBXGroup;
+			children = (
+				16B38F0E19C1482B004AF10C /* acknow.txt */,
+				16B38F0F19C1482B004AF10C /* arccmt.cpp */,
+				16B38F1019C1482B004AF10C /* archive.cpp */,
+				16B38F1119C1482B004AF10C /* archive.hpp */,
+				16B38F1219C1482B004AF10C /* arcread.cpp */,
+				16B38F1319C1482B004AF10C /* array.hpp */,
+				16B38F1419C1482B004AF10C /* beosea.cpp */,
+				16B38F1519C1482B004AF10C /* cmddata.cpp */,
+				16B38F1619C1482B004AF10C /* cmddata.hpp */,
+				16B38F1719C1482B004AF10C /* coder.cpp */,
+				16B38F1819C1482B004AF10C /* coder.hpp */,
+				16B38F1919C1482B004AF10C /* compress.hpp */,
+				16B38F1A19C1482B004AF10C /* consio.cpp */,
+				16B38F1B19C1482B004AF10C /* consio.hpp */,
+				16B38F1C19C1482B004AF10C /* crc.cpp */,
+				16B38F1D19C1482B004AF10C /* crc.hpp */,
+				16B38F1E19C1482B004AF10C /* crypt.cpp */,
+				16B38F1F19C1482B004AF10C /* crypt.hpp */,
+				16B38F2219C1482B004AF10C /* dll.hpp */,
+				16B38F2019C1482B004AF10C /* dll.cpp */,
+				16B38F2119C1482B004AF10C /* dll.def */,
+				16B38F2319C1482B004AF10C /* dll.rc */,
+				16B38F2419C1482B004AF10C /* encname.cpp */,
+				16B38F2519C1482B004AF10C /* encname.hpp */,
+				16B38F2619C1482B004AF10C /* errhnd.cpp */,
+				16B38F2719C1482B004AF10C /* errhnd.hpp */,
+				16B38F2819C1482B004AF10C /* extinfo.cpp */,
+				16B38F2919C1482B004AF10C /* extinfo.hpp */,
+				16B38F2A19C1482B004AF10C /* extract.cpp */,
+				16B38F2B19C1482B004AF10C /* extract.hpp */,
+				16B38F2C19C1482B004AF10C /* filcreat.cpp */,
+				16B38F2D19C1482B004AF10C /* filcreat.hpp */,
+				16B38F2E19C1482B004AF10C /* file.cpp */,
+				16B38F2F19C1482B004AF10C /* file.hpp */,
+				16B38F3019C1482B004AF10C /* filefn.cpp */,
+				16B38F3119C1482B004AF10C /* filefn.hpp */,
+				16B38F3219C1482B004AF10C /* filestr.cpp */,
+				16B38F3319C1482B004AF10C /* filestr.hpp */,
+				16B38F3419C1482B004AF10C /* find.cpp */,
+				16B38F3519C1482B004AF10C /* find.hpp */,
+				16B38F3619C1482B004AF10C /* getbits.cpp */,
+				16B38F3719C1482B004AF10C /* getbits.hpp */,
+				16B38F3819C1482B004AF10C /* global.cpp */,
+				16B38F3919C1482B004AF10C /* global.hpp */,
+				16B38F3A19C1482B004AF10C /* headers.hpp */,
+				16B38F3B19C1482B004AF10C /* isnt.cpp */,
+				16B38F3C19C1482B004AF10C /* isnt.hpp */,
+				16B38F3D19C1482B004AF10C /* license.txt */,
+				16B38F3E19C1482B004AF10C /* list.cpp */,
+				16B38F3F19C1482B004AF10C /* list.hpp */,
+				16B38F4019C1482B004AF10C /* loclang.hpp */,
+				16B38F4119C1482B004AF10C /* log.cpp */,
+				16B38F4219C1482B004AF10C /* log.hpp */,
+				16B38F4319C1482B004AF10C /* makefile.bcc */,
+				16B38F4419C1482B004AF10C /* makefile.dj */,
+				16B38F4519C1482B004AF10C /* makefile.dmc */,
+				16B38F4619C1482B004AF10C /* makefile.unix */,
+				16B38F4719C1482B004AF10C /* match.cpp */,
+				16B38F4819C1482B004AF10C /* match.hpp */,
+				16B38F4919C1482B004AF10C /* model.cpp */,
+				16B38F4A19C1482B004AF10C /* model.hpp */,
+				16B38F4B19C1482B004AF10C /* msc.dep */,
+				16B38F4C19C1482B004AF10C /* options.cpp */,
+				16B38F4D19C1482B004AF10C /* options.hpp */,
+				16B38F4E19C1482B004AF10C /* os.hpp */,
+				16B38F4F19C1482B004AF10C /* os2ea.cpp */,
+				16B38F5019C1482B004AF10C /* pathfn.cpp */,
+				16B38F5119C1482B004AF10C /* pathfn.hpp */,
+				16B38F5219C1482B004AF10C /* rar.cpp */,
+				16B38F5319C1482B004AF10C /* rar.hpp */,
+				16B38F5419C1482B004AF10C /* rardefs.hpp */,
+				16B38F5519C1482B004AF10C /* rarlang.hpp */,
+				16B38F5619C1482B004AF10C /* raros.hpp */,
+				16B38F5719C1482B004AF10C /* rarpch.cpp */,
+				16B38F5819C1482B004AF10C /* rartypes.hpp */,
+				16B38F5919C1482B004AF10C /* rarvm.cpp */,
+				16B38F5A19C1482B004AF10C /* rarvm.hpp */,
+				16B38F5B19C1482B004AF10C /* rarvmtbl.cpp */,
+				16B38F5C19C1482B004AF10C /* rawread.cpp */,
+				16B38F5D19C1482B004AF10C /* rawread.hpp */,
+				16B38F5E19C1482B004AF10C /* rdwrfn.cpp */,
+				16B38F5F19C1482B004AF10C /* rdwrfn.hpp */,
+				16B38F6019C1482B004AF10C /* readme.txt */,
+				16B38F6119C1482B004AF10C /* recvol.cpp */,
+				16B38F6219C1482B004AF10C /* recvol.hpp */,
+				16B38F6319C1482B004AF10C /* resource.cpp */,
+				16B38F6419C1482B004AF10C /* resource.hpp */,
+				16B38F6519C1482B004AF10C /* rijndael.cpp */,
+				16B38F6619C1482B004AF10C /* rijndael.hpp */,
+				16B38F6719C1482B004AF10C /* rs.cpp */,
+				16B38F6819C1482B004AF10C /* rs.hpp */,
+				16B38F6919C1482B004AF10C /* savepos.cpp */,
+				16B38F6A19C1482B004AF10C /* savepos.hpp */,
+				16B38F6B19C1482B004AF10C /* scantree.cpp */,
+				16B38F6C19C1482B004AF10C /* scantree.hpp */,
+				16B38F6D19C1482B004AF10C /* secpassword.cpp */,
+				16B38F6E19C1482B004AF10C /* secpassword.hpp */,
+				16B38F6F19C1482B004AF10C /* sha1.cpp */,
+				16B38F7019C1482B004AF10C /* sha1.hpp */,
+				16B38F7119C1482B004AF10C /* smallfn.cpp */,
+				16B38F7219C1482B004AF10C /* smallfn.hpp */,
+				16B38F7319C1482B004AF10C /* strfn.cpp */,
+				16B38F7419C1482B004AF10C /* strfn.hpp */,
+				16B38F7519C1482B004AF10C /* strlist.cpp */,
+				16B38F7619C1482B004AF10C /* strlist.hpp */,
+				16B38F7719C1482B004AF10C /* suballoc.cpp */,
+				16B38F7819C1482B004AF10C /* suballoc.hpp */,
+				16B38F7919C1482B004AF10C /* system.cpp */,
+				16B38F7A19C1482B004AF10C /* system.hpp */,
+				16B38F7B19C1482B004AF10C /* timefn.cpp */,
+				16B38F7C19C1482B004AF10C /* timefn.hpp */,
+				16B38F7D19C1482B004AF10C /* ulinks.cpp */,
+				16B38F7E19C1482B004AF10C /* ulinks.hpp */,
+				16B38F7F19C1482B004AF10C /* unicode.cpp */,
+				16B38F8019C1482B004AF10C /* unicode.hpp */,
+				16B38F8119C1482B004AF10C /* unios2.cpp */,
+				16B38F8219C1482B004AF10C /* unpack.cpp */,
+				16B38F8319C1482B004AF10C /* unpack.hpp */,
+				16B38F8419C1482B004AF10C /* unpack15.cpp */,
+				16B38F8519C1482B004AF10C /* unpack20.cpp */,
+				16B38F8619C1482B004AF10C /* UnRAR.vcproj */,
+				16B38F8719C1482B004AF10C /* UnRARDll.vcproj */,
+				16B38F8819C1482B004AF10C /* uowners.cpp */,
+				16B38F8919C1482B004AF10C /* version.hpp */,
+				16B38F8A19C1482B004AF10C /* volume.cpp */,
+				16B38F8B19C1482B004AF10C /* volume.hpp */,
+				16B38F8C19C1482B004AF10C /* win32acl.cpp */,
+				16B38F8D19C1482B004AF10C /* win32stm.cpp */,
+			);
+			path = unrar;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		16B38EE319C1464A004AF10C /* Unrar4iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16B38F0719C1464A004AF10C /* Build configuration list for PBXNativeTarget "Unrar4iOS" */;
+			buildPhases = (
+				16B38EE019C1464A004AF10C /* Sources */,
+				16B38EE119C1464A004AF10C /* Frameworks */,
+				16B38EE219C1464A004AF10C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Unrar4iOS;
+			productName = Unrar4iOS;
+			productReference = 16B38EE419C1464A004AF10C /* libUnrar4iOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		16B38EF319C1464A004AF10C /* Unrar4iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16B38F0A19C1464A004AF10C /* Build configuration list for PBXNativeTarget "Unrar4iOSTests" */;
+			buildPhases = (
+				16B38EF019C1464A004AF10C /* Sources */,
+				16B38EF119C1464A004AF10C /* Frameworks */,
+				16B38EF219C1464A004AF10C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				16B38EFB19C1464A004AF10C /* PBXTargetDependency */,
+			);
+			name = Unrar4iOSTests;
+			productName = Unrar4iOSTests;
+			productReference = 16B38EF419C1464A004AF10C /* Unrar4iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		16B38EDC19C1464A004AF10C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "___FULLUSERNAME___";
+			};
+			buildConfigurationList = 16B38EDF19C1464A004AF10C /* Build configuration list for PBXProject "Unrar4iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 16B38EDB19C1464A004AF10C;
+			productRefGroup = 16B38EE519C1464A004AF10C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				16B38EE319C1464A004AF10C /* Unrar4iOS */,
+				16B38EF319C1464A004AF10C /* Unrar4iOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		16B38EF219C1464A004AF10C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16B38F0219C1464A004AF10C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		16B38EE019C1464A004AF10C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16021E3419C1624F00AEB421 /* dll.cpp in Sources */,
+				16B38FCA19C14E8E004AF10C /* secpassword.cpp in Sources */,
+				16B38FC919C14DD1004AF10C /* volume.cpp in Sources */,
+				16B38FB919C1482B004AF10C /* smallfn.cpp in Sources */,
+				16B38FAA19C1482B004AF10C /* pathfn.cpp in Sources */,
+				16B38F9219C1482B004AF10C /* cmddata.cpp in Sources */,
+				16B38FC019C1482B004AF10C /* unicode.cpp in Sources */,
+				16B38EEF19C1464A004AF10C /* Unrar4iOS.mm in Sources */,
+				16B38FA119C1482B004AF10C /* getbits.cpp in Sources */,
+				16B38FA419C1482B004AF10C /* list.cpp in Sources */,
+				16B38FB619C1482B004AF10C /* scantree.cpp in Sources */,
+				16B38F9019C1482B004AF10C /* arcread.cpp in Sources */,
+				16B38FAD19C1482B004AF10C /* rarvm.cpp in Sources */,
+				16B38F9619C1482B004AF10C /* crypt.cpp in Sources */,
+				16B38FA219C1482B004AF10C /* global.cpp in Sources */,
+				16B38FA819C1482B004AF10C /* options.cpp in Sources */,
+				16B38FB519C1482B004AF10C /* savepos.cpp in Sources */,
+				16B38F9C19C1482B004AF10C /* filcreat.cpp in Sources */,
+				16B38F9A19C1482B004AF10C /* extinfo.cpp in Sources */,
+				16B38FAF19C1482B004AF10C /* rawread.cpp in Sources */,
+				16B38FB019C1482B004AF10C /* rdwrfn.cpp in Sources */,
+				16B38FBD19C1482B004AF10C /* system.cpp in Sources */,
+				16B38FBF19C1482B004AF10C /* ulinks.cpp in Sources */,
+				16B38FB419C1482B004AF10C /* rs.cpp in Sources */,
+				16B38F9E19C1482B004AF10C /* filefn.cpp in Sources */,
+				16B38FB219C1482B004AF10C /* resource.cpp in Sources */,
+				16B38FBE19C1482B004AF10C /* timefn.cpp in Sources */,
+				16B38FBB19C1482B004AF10C /* strlist.cpp in Sources */,
+				16B38FA319C1482B004AF10C /* isnt.cpp in Sources */,
+				16B38F9519C1482B004AF10C /* crc.cpp in Sources */,
+				16B38FA619C1482B004AF10C /* match.cpp in Sources */,
+				16B38F9D19C1482B004AF10C /* file.cpp in Sources */,
+				16B38FAB19C1482B004AF10C /* rar.cpp in Sources */,
+				16B38FBA19C1482B004AF10C /* strfn.cpp in Sources */,
+				16B38F9919C1482B004AF10C /* errhnd.cpp in Sources */,
+				16B38F9B19C1482B004AF10C /* extract.cpp in Sources */,
+				16B38F9419C1482B004AF10C /* consio.cpp in Sources */,
+				16B38FC219C1482B004AF10C /* unpack.cpp in Sources */,
+				16B38F8F19C1482B004AF10C /* archive.cpp in Sources */,
+				16B38FB319C1482B004AF10C /* rijndael.cpp in Sources */,
+				16B38F9819C1482B004AF10C /* encname.cpp in Sources */,
+				16B38FA019C1482B004AF10C /* find.cpp in Sources */,
+				16B38F9F19C1482B004AF10C /* filestr.cpp in Sources */,
+				16B38FB819C1482B004AF10C /* sha1.cpp in Sources */,
+				16B38FB119C1482B004AF10C /* recvol.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16B38EF019C1464A004AF10C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16B38F0419C1464A004AF10C /* Unrar4iOSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		16B38EFB19C1464A004AF10C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 16B38EE319C1464A004AF10C /* Unrar4iOS */;
+			targetProxy = 16B38EFA19C1464A004AF10C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		16B38F0019C1464A004AF10C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16B38F0119C1464A004AF10C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		16B38F0519C1464A004AF10C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		16B38F0619C1464A004AF10C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		16B38F0819C1464A004AF10C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Unrar4iOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Unrar4iOS/Unrar4iOS-Prefix.pch";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DSILENT",
+					"-DRARDLL",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		16B38F0919C1464A004AF10C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Unrar4iOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Unrar4iOS/Unrar4iOS-Prefix.pch";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DSILENT",
+					"-DRARDLL",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		16B38F0B19C1464A004AF10C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Unrar4iOS/Unrar4iOS-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Unrar4iOSTests/Unrar4iOSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		16B38F0C19C1464A004AF10C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Unrar4iOS/Unrar4iOS-Prefix.pch";
+				INFOPLIST_FILE = "Unrar4iOSTests/Unrar4iOSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16B38EDF19C1464A004AF10C /* Build configuration list for PBXProject "Unrar4iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16B38F0519C1464A004AF10C /* Debug */,
+				16B38F0619C1464A004AF10C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16B38F0719C1464A004AF10C /* Build configuration list for PBXNativeTarget "Unrar4iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16B38F0819C1464A004AF10C /* Debug */,
+				16B38F0919C1464A004AF10C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16B38F0A19C1464A004AF10C /* Build configuration list for PBXNativeTarget "Unrar4iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16B38F0B19C1464A004AF10C /* Debug */,
+				16B38F0C19C1464A004AF10C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 16B38EDC19C1464A004AF10C /* Project object */;
+}
